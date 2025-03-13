@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lego's Collection DC Comics</title>
+    <link rel="stylesheet" href="styles/styles_page.css">
+    <script defer src="script.js"></script>
+    <script defer src="scripts/carrossel.js"></script> 
+</head>
+<body>
+    <header>
+        <h1 class="title">DC COMICS</h1>
+        <h2 class="title-two">
+            <img src="assets/Icons/icons8-dc-comics.png" alt="Dc Comics">
+        </h2>
+        <a href="index.html" class="home-button">
+            <img src="assets/Icons/home-icon.png" alt="Home">
+        </a>
+    </header>
+
+    <section class="carrossel-Container">
+        <button class="btnCarrossel BtnBack" onclick="moverCarrossel(-1)">
+            <span>&lt;</span> 
+        </button>
+        
+        <div class="carrossel-Slide" id="carrossel">
+            <div class="item"><img src="assets/Marvel/Homem de Ferro.jpg" alt="Homem de Ferro"></div>
+            <div class="item"><img src="assets/Marvel/Homem Aranha.jpg" alt="Homem Aranha"></div>
+            <div class="item"><img src="assets/Marvel/Capitao America.jpg" alt="Capitão América"></div>
+            <div class="item"><img src="assets/Marvel/Capita Marvel v1.jpg" alt="Capitã Marvel v1"></div>
+            <div class="item"><img src="assets/Marvel/Capita Marvel v2.jpg" alt="Capitã Marvel v2"></div>
+            <div class="item"><img src="assets/Marvel/Maquina de Combate.jpg" alt="Maquina de Combate"></div>
+            <div class="item"><img src="assets/Marvel/Thor.jpg" alt="Thor"></div>
+            <div class="item"><img src="assets/Marvel/Homem Formiga.jpg" alt="Homem Formiga"></div>
+            <div class="item"><img src="assets/Marvel/Vespa.jpg" alt="Vespa"></div>
+            <div class="item"><img src="assets/Marvel/Cassie Lang.jpg" alt="Cassie Lang"></div>
+            <div class="item"><img src="assets/Marvel/Thanos.jpg" alt="Thanos"></div>
+            <div class="item"><img src="assets/Marvel/Senhor das Estrelas.jpg" alt="Senhor das Estrelas"></div>
+            <div class="item"><img src="assets/Marvel/Groot.jpg" alt="Groot"></div>
+            <div class="item"><img src="assets/Marvel/Rocket.jpg" alt="Rocket"></div>
+            <div class="item"><img src="assets/Marvel/Drax.jpg" alt="Drax"></div>
+            <div class="item"><img src="assets/Marvel/Mantis.jpg" alt="Mantis"></div>
+            <div class="item"><img src="assets/Marvel/Nebulosa.jpg" alt="Nebulosa"></div>
+        </div>
+
+        <button class="btnCarrossel BtnNext" onclick="moverCarrossel(1)">
+            <span>&gt;</span> 
+        </button>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolvido por: <a target="_blank" href="https://www.linkedin.com/in/andre-goncalves-barbosa-ba076b224/">Andre Barbosa</a></p>
+        <p>&copy; 2025 My Lego's Collection</p>
+    </footer>
+</body>
+</html>

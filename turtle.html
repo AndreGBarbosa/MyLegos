@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lego's Collection Tartarugas Ninjas</title>
+    <link rel="stylesheet" href="styles/styles_page.css">
+    <script defer src="script.js"></script>
+    <script defer src="scripts/carrossel.js"></script> 
+</head>
+<body>
+    <header>
+        <h1 class="title">TARTARUGAS NINJA</h1>
+        <h2 class="title-two">
+            <img src="assets/Icons/icon- turtle.png" alt="Tartarugas Ninja">
+        </h2>
+        <a href="index.html" class="home-button">
+            <img src="assets/Icons/home-icon.png" alt="Home">
+        </a>
+    </header>
+
+    <section class="carrossel-Container">
+        <button class="btnCarrossel BtnBack" onclick="moverCarrossel(-1)">
+            <span>&lt;</span> 
+        </button>
+        
+        <div class="carrossel-Slide" id="carrossel">
+            <div class="item"><img src="assets/TartarugasNinja/Donatello.jpg" alt="Donatello"></div>
+            <div class="item"><img src="assets/TartarugasNinja/Leonardo.jpg" alt="Leonardo"></div>
+            <div class="item"><img src="assets/TartarugasNinja/Michelangelo.jpg" alt="Michelangelo"></div>
+            <div class="item"><img src="assets/TartarugasNinja/Raphael.jpg" alt="Raphael"></div>
+            
+        </div>
+
+        <button class="btnCarrossel BtnNext" onclick="moverCarrossel(1)">
+            <span>&gt;</span> 
+        </button>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolvido por: <a target="_blank" href="https://www.linkedin.com/in/andre-goncalves-barbosa-ba076b224/">Andre Barbosa</a></p>
+        <p>&copy; 2025 My Lego's Collection</p>
+    </footer>
+</body>
+</html>

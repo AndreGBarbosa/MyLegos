@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Lego's Collection Star Wars</title>
+    <link rel="stylesheet" href="styles/styles_page.css">
+    <script defer src="script.js"></script>
+    <script defer src="scripts/carrossel.js"></script> 
+</head>
+<body>
+    <header>
+        <h1 class="title">STAR WARS</h1>
+        <h2 class="title-two">
+            <img src="assets/Icons/icons8-guerra-nas-estrelas-96.png alt="alt="Star Wars">
+        </h2>
+        <a href="index.html" class="home-button">
+            <img src="assets/Icons/home-icon.png" alt="Home">
+        </a>
+    </header>
+
+    <section class="carrossel-Container">
+        <button class="btnCarrossel BtnBack" onclick="moverCarrossel(-1)">
+            <span>&lt;</span> 
+        </button>
+        
+        <div class="carrossel-Slide" id="carrossel">
+            <div class="item"><img src="assets/StarWars/ahsoka e bb8.jpg" alt="Homem Aranha"></div>
+            <div class="item"><img src="assets/StarWars/Anakin v1.jpg" alt="Capitão América"></div>
+            <div class="item"><img src="assets/StarWars/Anakin v2.jpg" alt="Capitã Marvel v1"></div>
+            <div class="item"><img src="assets/StarWars/Obi-Wan v1.jpg" alt="Capitã Marvel v2"></div>
+            <div class="item"><img src="assets/StarWars/Obi-Wan v2.jpg" alt="Maquina de Combate"></div>
+            <div class="item"><img src="assets/StarWars/Obi-Wan v3.jpg" alt="Thor"></div>
+            <div class="item"><img src="assets/StarWars/Leia.jpg" alt="Pricesa Léia"></div>
+            <div class="item"><img src="assets/StarWars/HanSolo.jpg" alt="Han Solo"></div>
+            <div class="item"><img src="assets/StarWars/DarthMal.jpg" alt="Dsth Mal"></div>
+            <div class="item"><img src="assets/StarWars/Mandoloriano e Grogu.jpg" alt="Mandoloriano e Grogu"></div>
+            <div class="item"><img src="assets/StarWars/R2D2.jpg" alt="R2D2"></div>
+            <div class="item"><img src="assets/StarWars/general Grievous.jpg" alt="General Grievous"></div>
+            <div class="item"><img src="assets/StarWars/Stormtrooper.jpg" alt="Stormtrooper"></div>
+        </div>
+
+        <button class="btnCarrossel BtnNext" onclick="moverCarrossel(1)">
+            <span>&gt;</span> <!-- Ícone de seta direita -->
+        </button>
+    </section>
+
+    <footer class="footer">
+        <p>Desenvolvido por: <a target="_blank" href="https://www.linkedin.com/in/andre-goncalves-barbosa-ba076b224/">Andre Barbosa</a></p>
+        <p>&copy; 2025 My Lego's Collection</p>
+    </footer>
+</body>
+</html>
