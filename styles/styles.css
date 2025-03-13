@@ -54,23 +54,28 @@ header {
 }
 
 main {
-    display: flex;
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    justify-content: center;
     align-items: center;
     gap: 20px;  
-    padding: 20rem;
-    margin-top: 150px;
+    padding: 5rem;
+    margin-top: 220px;
+    max-width: 600px; /* Define um tamanho máximo para não esticar muito */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main a {
-    display: inline-block;
-    width: 150px;  
-    height: 150px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
 }
 
 button {
-    width: 100%;  
-    height: 100%;  
+    width: 100%;
+    height: 100%;
     background-color: #444;
     color: white;
     border: none;
@@ -80,6 +85,8 @@ button {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    padding: 10px;
+    min-height: 100px;
 }
 
 button:hover {
@@ -88,9 +95,13 @@ button:hover {
 }
 
 button img {
-    width: 50%;  
+    width: 50%;
     height: auto;
+    max-width: 70px;
 }
+
+
+
 
 .footer {
     background-color: #333;
@@ -110,4 +121,16 @@ button img {
 
 .footer a:hover {
     text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
